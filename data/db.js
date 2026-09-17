@@ -7,7 +7,7 @@ const DB_PATH = path.join(__dirname, 'leads.json');
 const defaultData = {
   settings: {
     isActive: true,
-    sendInterval: 45,
+    sendInterval: 60,
     autoScrape: true,
     targetSectors: ['klinik', 'otel', 'restoran'],
     targetCities: ['İstanbul', 'Ankara', 'İzmir', 'Antalya', 'Bursa', 'Muğla']

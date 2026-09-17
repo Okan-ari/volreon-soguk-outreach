@@ -1,6 +1,6 @@
 // Volreon Soğuk Outreach Dashboard Client
 let currentData = {
-  settings: { isActive: true, sendInterval: 45 },
+  settings: { isActive: true, sendInterval: 60 },
   stats: { totalScraped: 0, totalFound: 0, totalSent: 0, totalFailed: 0, pendingCount: 0 },
   leads: [],
   logs: []
