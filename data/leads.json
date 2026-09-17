@@ -1,0 +1,1076 @@
+{
+  "settings": {
+    "isActive": true,
+    "sendInterval": 45,
+    "autoScrape": true,
+    "targetSectors": [
+      "dis_klinigi",
+      "butik_otel",
+      "restoran_kafe"
+    ],
+    "targetCities": [
+      "İstanbul",
+      "Ankara",
+      "İzmir",
+      "Antalya",
+      "Bursa",
+      "Muğla"
+    ]
+  },
+  "stats": {
+    "totalScraped": 57,
+    "totalFound": 28,
+    "totalSent": 5,
+    "totalFailed": 0
+  },
+  "leads": [
+    {
+      "id": "ld_1789679995225_h6axa",
+      "name": "Doç. Dr. Yalçın Bayram Estetik ve Plastik Cerrahi Kliniği",
+      "sector": "estetik_merkezi",
+      "email": "info@yalcinbayram.com.tr",
+      "phone": "+905421350246",
+      "website": "https://www.yalcinbayram.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "GONDERILDI",
+      "createdAt": "2026-09-17T21:19:55.225Z",
+      "sentAt": "2026-09-17T21:20:33.277Z",
+      "error": null
+    },
+    {
+      "id": "ld_1789679993615_6nt6v",
+      "name": "Plastic Surgeon in Istanbul, Turkey | Dr. Erman Ak | Facelift, Breast Augmentation, Neck Lift, Abdominoplasty, Liposuction",
+      "sector": "estetik_merkezi",
+      "email": "info@drermanak.com",
+      "phone": "+90%20553%20938%2092%2098",
+      "website": "https://www.drermanak.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "GONDERILDI",
+      "createdAt": "2026-09-17T21:19:53.615Z",
+      "sentAt": "2026-09-17T21:21:18.343Z",
+      "error": null
+    },
+    {
+      "id": "ld_1789679990579_yq5nx",
+      "name": "Op. Dr. Oğuzhan Demirel | Meme Estetiği - Meme Büyütme - Meme Küçültme - Breast Augmentation Istanbul",
+      "sector": "estetik_merkezi",
+      "email": "info@droguzhandemirel.com",
+      "phone": "",
+      "website": "http://www.droguzhandemirel.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:19:50.579Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679987324_rxgx2",
+      "name": "İstanbul Aesthetic Center",
+      "sector": "estetik_merkezi",
+      "email": "bilgi@ia-center.com",
+      "phone": "",
+      "website": "https://istanbulaestheticcenter.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "GONDERILDI",
+      "createdAt": "2026-09-17T21:19:47.324Z",
+      "sentAt": "2026-09-17T21:19:48.238Z",
+      "error": null
+    },
+    {
+      "id": "ld_1789679985895_k5uqj",
+      "name": "Anka Estetik ve Plastik Cerrahi, Doç.Dr.Anı Çinpolat-Doç.Dr.Gamze Bektaş",
+      "sector": "estetik_merkezi",
+      "email": "info@ankaplasticsurgery.com",
+      "phone": "+902122968961",
+      "website": "https://www.ankaplasticsurgery.com/tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:19:45.895Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679908016_aj52w",
+      "name": "Dentlotus Ağız ve Diş Sağlığı Polikliniği | Sişli Diş",
+      "sector": "dis_klinigi",
+      "email": "info@dentlotus.com",
+      "phone": "905424640965",
+      "website": "https://dentlotus.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "GONDERILDI",
+      "createdAt": "2026-09-17T21:18:28.016Z",
+      "sentAt": "2026-09-17T21:19:03.148Z",
+      "error": null
+    },
+    {
+      "id": "ld_1789679905353_v9sls",
+      "name": "Özel Dentist Ağız ve Diş Sağlığı Polikliniği",
+      "sector": "dis_klinigi",
+      "email": "info@dentist.com.tr",
+      "phone": "",
+      "website": "http://www.dentist.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:18:25.353Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679903600_04e2t",
+      "name": "Dent Akdeniz Şifa Ağız Ve Diş Sağlığı Polikliniği",
+      "sector": "dis_klinigi",
+      "email": "info@dentakdenizsifa.com",
+      "phone": "0533%20163%2022%2063",
+      "website": "http://www.dentakdenizsifa.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:18:23.600Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679901727_0sooc",
+      "name": "Özel Mersida Klinik Ağız ve Diş Sağlığı Polikliniği",
+      "sector": "dis_klinigi",
+      "email": "info@mersida.com",
+      "phone": "05441125300",
+      "website": "https://www.clinicmersida.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:18:21.727Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679899850_0mma4",
+      "name": "Denta İstanbul Diş Kliniği | Denta Istanbul Clinic | Dental Implants & Dental Veneer & Smile Design",
+      "sector": "dis_klinigi",
+      "email": "mail@dentaistanbul.com.tr",
+      "phone": "+902125030881",
+      "website": "https://dentaistanbul.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:18:19.850Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679888409_zvcz7",
+      "name": "Dental Clinic - Klinik 34 Ağız ve Diş Polikliniği",
+      "sector": "dis_klinigi",
+      "email": "info@klinik34.com.tr",
+      "phone": "+902125913434",
+      "website": "http://klinik34.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "GONDERILDI",
+      "createdAt": "2026-09-17T21:18:08.409Z",
+      "sentAt": "2026-09-17T21:18:18.334Z",
+      "error": null
+    },
+    {
+      "id": "ld_1789679885081_e1tk9",
+      "name": "Dental Implants in Turkey: Lema Clinic | All on Dental Clinic in Istanbul​ | The Best Hollywood Smile Reviews | Turkey Teeth!",
+      "sector": "dis_klinigi",
+      "email": "info@lemaclinic.com",
+      "phone": "905421071632",
+      "website": "https://lemaclinic.com/contact/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:18:05.081Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679878657_eu358",
+      "name": "Klinik Bomonti Diş Kliniği-Şişli Estetik Diş Hekimi-Premium Dental Clinic Istanbul",
+      "sector": "dis_klinigi",
+      "email": "info@klinikbomonti.com",
+      "phone": "",
+      "website": "https://klinikbomonti.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:58.657Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679876253_s3uyk",
+      "name": "CeDent Ağız ve Diş Sağlığı Polikliniği | Fatih | 7/24 Açık",
+      "sector": "dis_klinigi",
+      "email": "info@cedent.com.tr",
+      "phone": "(0212)%20530%2048%2048",
+      "website": "https://cedent.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:56.253Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679874904_z15a6",
+      "name": "Citydent Istanbul Dental Clinic",
+      "sector": "dis_klinigi",
+      "email": "support@citydentistanbul.com",
+      "phone": "+902122384672",
+      "website": "https://www.citydentistanbul.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:54.904Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679873129_6nv5n",
+      "name": "Özel Dental Plus İstanbul Ağız ve Diş Sağlığı Polikliniği",
+      "sector": "dis_klinigi",
+      "email": "info@dentalplus.com.tr",
+      "phone": "+90%20212%20521%2076%2076",
+      "website": "https://dentalplus.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:53.129Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679871774_n9m01",
+      "name": "Dentistanbul Diş Hastanesi",
+      "sector": "dis_klinigi",
+      "email": "info@dentistanbul.com.tr",
+      "phone": "05520920003",
+      "website": "http://dentistanbulhospital.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:51.775Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679869906_lmh8v",
+      "name": "İSTANBUL KLİNİK AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ",
+      "sector": "dis_klinigi",
+      "email": "info@istanbulklinik.com.tr",
+      "phone": "+90 (212) 488 02 88",
+      "website": "https://www.istanbulklinik.net/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:49.906Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679866574_pstti",
+      "name": "Klinik İstanbul Ağız ve Diş Sağlığı Polikliniği",
+      "sector": "dis_klinigi",
+      "email": "info@klinik-istanbul.com",
+      "phone": "",
+      "website": "http://www.klinik-istanbul.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:46.574Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679848262_henn3",
+      "name": "Estetik Cerrahi Uzmanı Op. Dr. Ali Cem Oktay, Plastik Rekonstrüktif Ve Estetik Cerrahi",
+      "sector": "estetik_merkezi",
+      "email": "acemoktay@gmail.com",
+      "phone": "+905325145070",
+      "website": "https://alicemoktay.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:28.262Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679846425_yftxp",
+      "name": "Op. Dr. Fatih Söylemez | Estetik Cerrah",
+      "sector": "estetik_merkezi",
+      "email": "info@fatihsoylemez.com.tr",
+      "phone": "",
+      "website": "https://www.fatihsoylemez.com.tr/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:26.425Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679845088_dcwe2",
+      "name": "Estetik ve Plastik Cerrahi Merkezi - Esteaura",
+      "sector": "estetik_merkezi",
+      "email": "info@esteaura.com",
+      "phone": "+90 530 442 60 99",
+      "website": "https://esteaura.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:25.088Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679842851_a1o6t",
+      "name": "Estetik International",
+      "sector": "estetik_merkezi",
+      "email": "info@estetikinternational.com",
+      "phone": "+905498275035",
+      "website": "https://www.estetikinternational.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:22.851Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679841065_q7yc0",
+      "name": "Dr. Yavuz Özsular Plastik Rekonstrüktif ve Estetik Cerrahi Uzmanı",
+      "sector": "estetik_merkezi",
+      "email": "info@yavuzozsular.com",
+      "phone": "+905467884055",
+      "website": "https://yavuzozsular.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:21.065Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679837618_8d5ji",
+      "name": "Prof. Dr. Hakan Şirinoğlu Estetik ve Plastik Cerrahi Kliniği",
+      "sector": "estetik_merkezi",
+      "email": "info@hakansirinoglu.com",
+      "phone": "5351003080",
+      "website": "http://www.hakansirinoglu.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:17.618Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679833895_fcpxh",
+      "name": "Doç.Dr.Andaç AYKAN",
+      "sector": "estetik_merkezi",
+      "email": "consultation@aykanclinic.com",
+      "phone": "+90(532)1009074",
+      "website": "https://andacaykan.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_profile",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:13.895Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679832356_yr0ip",
+      "name": "Estetik Ve Plastik Cerrahi Kliniği Dr. Emre Özenalp",
+      "sector": "estetik_merkezi",
+      "email": "press@linktr.ee",
+      "phone": "",
+      "website": "http://linktr.ee/dremreozenalp",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:12.356Z",
+      "sentAt": null,
+      "error": null
+    },
+    {
+      "id": "ld_1789679830291_6ey0k",
+      "name": "Prof. Dr. Cengiz Açıkel - Estetik Plastik Cerrah",
+      "sector": "estetik_merkezi",
+      "email": "drca.ofis@gmail.com",
+      "phone": "+905358752020",
+      "website": "http://www.cengizacikel.com/",
+      "city": "İstanbul",
+      "source": "Google Haritalar & Açık Web",
+      "status": "BEKLEMEDE",
+      "createdAt": "2026-09-17T21:17:10.291Z",
+      "sentAt": null,
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "id": "1789680088193_2avf",
+      "timestamp": "00:21:28",
+      "type": "SCRAPER",
+      "message": "\"İstanbul restoran\" aramasında 0 web sitesi olan gerçek işletme tespit edildi."
+    },
+    {
+      "id": "1789680078344_9ah9",
+      "timestamp": "00:21:18",
+      "type": "SUCCESS",
+      "message": "E-posta BAŞARIYLA iletildi: info@drermanak.com [Plastic Surgeon in Istanbul, Turkey | Dr. Erman Ak | Facelift, Breast Augmentation, Neck Lift, Abdominoplasty, Liposuction]"
+    },
+    {
+      "id": "1789680078237_u53b",
+      "timestamp": "00:21:18",
+      "type": "MAILER",
+      "message": "E-posta gönderiliyor: info@drermanak.com (Plastic Surgeon in Istanbul, Turkey | Dr. Erman Ak | Facelift, Breast Augmentation, Neck Lift, Abdominoplasty, Liposuction - estetik_merkezi)"
+    },
+    {
+      "id": "1789680077884_qii6",
+      "timestamp": "00:21:17",
+      "type": "SCRAPER",
+      "message": "📍 Google Haritalar taranıyor: \"İstanbul restoran\" (İstanbul)"
+    },
+    {
+      "id": "1789680042961_3uc5",
+      "timestamp": "00:20:42",
+      "type": "SCRAPER",
+      "message": "\"İstanbul butik otel\" aramasında 0 web sitesi olan gerçek işletme tespit edildi."
+    },
+    {
+      "id": "1789680033278_qbuk",
+      "timestamp": "00:20:33",
+      "type": "SUCCESS",
+      "message": "E-posta BAŞARIYLA iletildi: info@yalcinbayram.com.tr [Doç. Dr. Yalçın Bayram Estetik ve Plastik Cerrahi Kliniği]"
+    },
+    {
+      "id": "1789680033187_8ohl",
+      "timestamp": "00:20:33",
+      "type": "MAILER",
+      "message": "E-posta gönderiliyor: info@yalcinbayram.com.tr (Doç. Dr. Yalçın Bayram Estetik ve Plastik Cerrahi Kliniği - estetik_merkezi)"
+    },
+    {
+      "id": "1789680032877_5y6t",
+      "timestamp": "00:20:32",
+      "type": "SCRAPER",
+      "message": "📍 Google Haritalar taranıyor: \"İstanbul butik otel\" (İstanbul)"
+    },
+    {
+      "id": "1789679996429_v78h",
+      "timestamp": "00:19:56",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estesie Clinic | İstanbul Medikal Estetik Merkezi Saç Ekimi Plastik Cerrahi Burun Dolgusu En iyi Naturel Botoks Klinik -> https://www.estesie.com/"
+    },
+    {
+      "id": "1789679995226_88ml",
+      "timestamp": "00:19:55",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Doç. Dr. Yalçın Bayram Estetik ve Plastik Cerrahi Kliniği -> info@yalcinbayram.com.tr [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679994820_3jrc",
+      "timestamp": "00:19:54",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Doç. Dr. Yalçın Bayram Estetik ve Plastik Cerrahi Kliniği -> https://www.yalcinbayram.com.tr/"
+    },
+    {
+      "id": "1789679993617_7bc0",
+      "timestamp": "00:19:53",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Plastic Surgeon in Istanbul, Turkey | Dr. Erman Ak | Facelift, Breast Augmentation, Neck Lift, Abdominoplasty, Liposuction -> info@drermanak.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679991782_o1v1",
+      "timestamp": "00:19:51",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Plastic Surgeon in Istanbul, Turkey | Dr. Erman Ak | Facelift, Breast Augmentation, Neck Lift, Abdominoplasty, Liposuction -> https://www.drermanak.com/"
+    },
+    {
+      "id": "1789679990580_sv4n",
+      "timestamp": "00:19:50",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Op. Dr. Oğuzhan Demirel | Meme Estetiği - Meme Büyütme - Meme Küçültme - Breast Augmentation Istanbul -> info@droguzhandemirel.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679990180_jzby",
+      "timestamp": "00:19:50",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Op. Dr. Oğuzhan Demirel | Meme Estetiği - Meme Büyütme - Meme Küçültme - Breast Augmentation Istanbul -> http://www.droguzhandemirel.com/"
+    },
+    {
+      "id": "1789679988528_3bm3",
+      "timestamp": "00:19:48",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik Center - Estetik Plastik Cerrahi Kliniği -> https://www.estetikcenter.com.tr/"
+    },
+    {
+      "id": "1789679988241_yjhg",
+      "timestamp": "00:19:48",
+      "type": "SUCCESS",
+      "message": "E-posta BAŞARIYLA iletildi: bilgi@ia-center.com [İstanbul Aesthetic Center]"
+    },
+    {
+      "id": "1789679988143_ibxw",
+      "timestamp": "00:19:48",
+      "type": "MAILER",
+      "message": "E-posta gönderiliyor: bilgi@ia-center.com (İstanbul Aesthetic Center - estetik_merkezi)"
+    },
+    {
+      "id": "1789679987325_g06w",
+      "timestamp": "00:19:47",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: İstanbul Aesthetic Center -> bilgi@ia-center.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679987099_5hvc",
+      "timestamp": "00:19:47",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: İstanbul Aesthetic Center -> https://istanbulaestheticcenter.com/"
+    },
+    {
+      "id": "1789679985897_tjll",
+      "timestamp": "00:19:45",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Anka Estetik ve Plastik Cerrahi, Doç.Dr.Anı Çinpolat-Doç.Dr.Gamze Bektaş -> info@ankaplasticsurgery.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679985062_wj9d",
+      "timestamp": "00:19:45",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Anka Estetik ve Plastik Cerrahi, Doç.Dr.Anı Çinpolat-Doç.Dr.Gamze Bektaş -> https://www.ankaplasticsurgery.com/tr/"
+    },
+    {
+      "id": "1789679981435_9md4",
+      "timestamp": "00:19:41",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Op.Dr.Sinan Öztürk - Estetik ve Plastik Cerrahi Uzmanı -> http://www.opdrsinanozturk.com/"
+    },
+    {
+      "id": "1789679980232_6km7",
+      "timestamp": "00:19:40",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: acemoktay@gmail.com"
+    },
+    {
+      "id": "1789679979041_6oqr",
+      "timestamp": "00:19:39",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik Cerrahi Uzmanı Op. Dr. Ali Cem Oktay, Plastik Rekonstrüktif Ve Estetik Cerrahi -> https://alicemoktay.com/"
+    },
+    {
+      "id": "1789679977839_yr44",
+      "timestamp": "00:19:37",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: info@fatihsoylemez.com.tr"
+    },
+    {
+      "id": "1789679977709_mref",
+      "timestamp": "00:19:37",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Op. Dr. Fatih Söylemez | Estetik Cerrah -> https://www.fatihsoylemez.com.tr/"
+    },
+    {
+      "id": "1789679976506_j3ro",
+      "timestamp": "00:19:36",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: info@esteaura.com"
+    },
+    {
+      "id": "1789679976011_oy25",
+      "timestamp": "00:19:36",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik ve Plastik Cerrahi Merkezi - Esteaura -> https://esteaura.com/"
+    },
+    {
+      "id": "1789679974808_ta79",
+      "timestamp": "00:19:34",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: info@estetikinternational.com"
+    },
+    {
+      "id": "1789679974453_huke",
+      "timestamp": "00:19:34",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik International -> https://www.estetikinternational.com/"
+    },
+    {
+      "id": "1789679964241_s12r",
+      "timestamp": "00:19:24",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dr. Yavuz Özsular Plastik Rekonstrüktif ve Estetik Cerrahi Uzmanı -> https://yavuzozsular.com/"
+    },
+    {
+      "id": "1789679963038_fjbn",
+      "timestamp": "00:19:23",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: info@hakansirinoglu.com"
+    },
+    {
+      "id": "1789679960596_qx3q",
+      "timestamp": "00:19:20",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Prof. Dr. Hakan Şirinoğlu Estetik ve Plastik Cerrahi Kliniği -> http://www.hakansirinoglu.com/"
+    },
+    {
+      "id": "1789679959394_e5qp",
+      "timestamp": "00:19:19",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: consultation@aykanclinic.com"
+    },
+    {
+      "id": "1789679959120_x0qj",
+      "timestamp": "00:19:19",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Doç.Dr.Andaç AYKAN -> https://andacaykan.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_profile"
+    },
+    {
+      "id": "1789679957918_9i9p",
+      "timestamp": "00:19:17",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: press@linktr.ee"
+    },
+    {
+      "id": "1789679957279_mm0j",
+      "timestamp": "00:19:17",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik Ve Plastik Cerrahi Kliniği Dr. Emre Özenalp -> http://linktr.ee/dremreozenalp"
+    },
+    {
+      "id": "1789679956077_gf3a",
+      "timestamp": "00:19:16",
+      "type": "SYSTEM",
+      "message": "Mükerrer işletme atlandı: drca.ofis@gmail.com"
+    },
+    {
+      "id": "1789679955643_nxiv",
+      "timestamp": "00:19:15",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Prof. Dr. Cengiz Açıkel - Estetik Plastik Cerrah -> http://www.cengizacikel.com/"
+    },
+    {
+      "id": "1789679954269_y8ey",
+      "timestamp": "00:19:14",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dr Serkan Aygın Hair Transplant Clinic - Istanbul Turkey -> https:///aclk?sa=L&ai=DChsSEwiHr5qrxfaWAxVAmYMHHSNBPE4YACICCAEQABoCZWY&co=1&ase=2&gclid=EAIaIQobChMIh6-aq8X2lgMVQJmDBx0jQTxOEBAYAiAAEgKBW_D_BwE&cid=CAASuwHkaPwKP5LkdYcXGcrb33CTUT3tCOhZ5736hrwC-N9ixkmb-WZ1T4GxDsPxVDW8jYtBVD49BIp1lnVttxMhKZPnbtFse-sS69WvZC3qEZZ6CQduFCh8L4UKbiCg7I8CStj-gMKIvoHSWeQ9i21o7IiBmStQ726EiRI0mr4NEsu1kIsEOi8v5JC2zk9R4fgogY4iXrn07cT_vWFJUhz7RFCt7_ra4Ko_Y7FBNT1DYvn80G922J5RxMey_tdy&cce=2&category=acrcp_v1_32&sig=AOD64_31xCXzh2II4KV7subGaiA8hp8g8g&adurl&q&ctype=99&nis=5"
+    },
+    {
+      "id": "1789679952636_bje1",
+      "timestamp": "00:19:12",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Bahçeşehir Üniversite Hastanesi Medical Park Göztepe -> https:///aclk?sa=L&ai=DChsSEwiHr5qrxfaWAxVAmYMHHSNBPE4YACICCAEQARoCZWY&co=1&ase=2&gclid=EAIaIQobChMIh6-aq8X2lgMVQJmDBx0jQTxOEBAYASAAEgKe9_D_BwE&cid=CAASuwHkaPwKP5LkdYcXGcrb33CTUT3tCOhZ5736hrwC-N9ixkmb-WZ1T4GxDsPxVDW8jYtBVD49BIp1lnVttxMhKZPnbtFse-sS69WvZC3qEZZ6CQduFCh8L4UKbiCg7I8CStj-gMKIvoHSWeQ9i21o7IiBmStQ726EiRI0mr4NEsu1kIsEOi8v5JC2zk9R4fgogY4iXrn07cT_vWFJUhz7RFCt7_ra4Ko_Y7FBNT1DYvn80G922J5RxMey_tdy&cce=2&category=acrcp_v1_32&sig=AOD64_2IbxCivAjDH6EDJovFbQQp-5CaRA&adurl&q&ctype=99&nis=5"
+    },
+    {
+      "id": "1789679952633_fkla",
+      "timestamp": "00:19:12",
+      "type": "SCRAPER",
+      "message": "\"İstanbul estetik cerrahi kliniği\" aramasında 19 web sitesi olan gerçek işletme tespit edildi."
+    },
+    {
+      "id": "1789679943149_isdf",
+      "timestamp": "00:19:03",
+      "type": "SUCCESS",
+      "message": "E-posta BAŞARIYLA iletildi: info@dentlotus.com [Dentlotus Ağız ve Diş Sağlığı Polikliniği | Sişli Diş]"
+    },
+    {
+      "id": "1789679943058_jglu",
+      "timestamp": "00:19:03",
+      "type": "MAILER",
+      "message": "E-posta gönderiliyor: info@dentlotus.com (Dentlotus Ağız ve Diş Sağlığı Polikliniği | Sişli Diş - dis_klinigi)"
+    },
+    {
+      "id": "1789679942876_uoaf",
+      "timestamp": "00:19:02",
+      "type": "SCRAPER",
+      "message": "📍 Google Haritalar taranıyor: \"İstanbul estetik cerrahi kliniği\" (İstanbul)"
+    },
+    {
+      "id": "1789679908017_eeko",
+      "timestamp": "00:18:28",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Dentlotus Ağız ve Diş Sağlığı Polikliniği | Sişli Diş -> info@dentlotus.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679906556_b2jv",
+      "timestamp": "00:18:26",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dentlotus Ağız ve Diş Sağlığı Polikliniği | Sişli Diş -> https://dentlotus.com/"
+    },
+    {
+      "id": "1789679905353_sj88",
+      "timestamp": "00:18:25",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Özel Dentist Ağız ve Diş Sağlığı Polikliniği -> info@dentist.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679904804_wk50",
+      "timestamp": "00:18:24",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Özel Dentist Ağız ve Diş Sağlığı Polikliniği -> http://www.dentist.com.tr/"
+    },
+    {
+      "id": "1789679903601_lomv",
+      "timestamp": "00:18:23",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Dent Akdeniz Şifa Ağız Ve Diş Sağlığı Polikliniği -> info@dentakdenizsifa.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679902930_a7de",
+      "timestamp": "00:18:22",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dent Akdeniz Şifa Ağız Ve Diş Sağlığı Polikliniği -> http://www.dentakdenizsifa.com/"
+    },
+    {
+      "id": "1789679901727_61tf",
+      "timestamp": "00:18:21",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Özel Mersida Klinik Ağız ve Diş Sağlığı Polikliniği -> info@mersida.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679901054_m7zu",
+      "timestamp": "00:18:21",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Özel Mersida Klinik Ağız ve Diş Sağlığı Polikliniği -> https://www.clinicmersida.com/"
+    },
+    {
+      "id": "1789679899850_4s2e",
+      "timestamp": "00:18:19",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Denta İstanbul Diş Kliniği | Denta Istanbul Clinic | Dental Implants & Dental Veneer & Smile Design -> mail@dentaistanbul.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679898335_roz2",
+      "timestamp": "00:18:18",
+      "type": "SUCCESS",
+      "message": "E-posta BAŞARIYLA iletildi: info@klinik34.com.tr [Dental Clinic - Klinik 34 Ağız ve Diş Polikliniği]"
+    },
+    {
+      "id": "1789679897944_l9ie",
+      "timestamp": "00:18:17",
+      "type": "MAILER",
+      "message": "E-posta gönderiliyor: info@klinik34.com.tr (Dental Clinic - Klinik 34 Ağız ve Diş Polikliniği - dis_klinigi)"
+    },
+    {
+      "id": "1789679896311_opma",
+      "timestamp": "00:18:16",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Denta İstanbul Diş Kliniği | Denta Istanbul Clinic | Dental Implants & Dental Veneer & Smile Design -> https://dentaistanbul.com.tr/"
+    },
+    {
+      "id": "1789679889612_mwap",
+      "timestamp": "00:18:09",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dante İstanbul Diş Polikliniği -> http://www.danteclinic.com/"
+    },
+    {
+      "id": "1789679888410_f3ph",
+      "timestamp": "00:18:08",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Dental Clinic - Klinik 34 Ağız ve Diş Polikliniği -> info@klinik34.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679887844_5tsk",
+      "timestamp": "00:18:07",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dental Clinic - Klinik 34 Ağız ve Diş Polikliniği -> http://klinik34.com.tr/"
+    },
+    {
+      "id": "1789679886283_as0t",
+      "timestamp": "00:18:06",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dt. İstanbul Ağız ve Diş Sağlığı Polikliniği -> https://dtistanbul.com.tr/"
+    },
+    {
+      "id": "1789679885081_0wrq",
+      "timestamp": "00:18:05",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Dental Implants in Turkey: Lema Clinic | All on Dental Clinic in Istanbul​ | The Best Hollywood Smile Reviews | Turkey Teeth! -> info@lemaclinic.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679884582_rjyh",
+      "timestamp": "00:18:04",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dental Implants in Turkey: Lema Clinic | All on Dental Clinic in Istanbul​ | The Best Hollywood Smile Reviews | Turkey Teeth! -> https://lemaclinic.com/contact/"
+    },
+    {
+      "id": "1789679879860_9p6b",
+      "timestamp": "00:17:59",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: İstanbul Diş Akademisi Ağız ve Diş Sağlığı Polikliniği (Dental Clinic) -> https://www.istanbuldisakademisi.com/"
+    },
+    {
+      "id": "1789679878658_g9wr",
+      "timestamp": "00:17:58",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Klinik Bomonti Diş Kliniği-Şişli Estetik Diş Hekimi-Premium Dental Clinic Istanbul -> info@klinikbomonti.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679877456_bdp8",
+      "timestamp": "00:17:57",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Klinik Bomonti Diş Kliniği-Şişli Estetik Diş Hekimi-Premium Dental Clinic Istanbul -> https://klinikbomonti.com/"
+    },
+    {
+      "id": "1789679876255_hvmz",
+      "timestamp": "00:17:56",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: CeDent Ağız ve Diş Sağlığı Polikliniği | Fatih | 7/24 Açık -> info@cedent.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679876107_5435",
+      "timestamp": "00:17:56",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: CeDent Ağız ve Diş Sağlığı Polikliniği | Fatih | 7/24 Açık -> https://cedent.com.tr/"
+    },
+    {
+      "id": "1789679874905_y2td",
+      "timestamp": "00:17:54",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Citydent Istanbul Dental Clinic -> support@citydentistanbul.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679874333_miov",
+      "timestamp": "00:17:54",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Citydent Istanbul Dental Clinic -> https://www.citydentistanbul.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website"
+    },
+    {
+      "id": "1789679873130_cqja",
+      "timestamp": "00:17:53",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Özel Dental Plus İstanbul Ağız ve Diş Sağlığı Polikliniği -> info@dentalplus.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679872979_e6y4",
+      "timestamp": "00:17:52",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Özel Dental Plus İstanbul Ağız ve Diş Sağlığı Polikliniği -> https://dentalplus.com.tr/"
+    },
+    {
+      "id": "1789679871777_4oli",
+      "timestamp": "00:17:51",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Dentistanbul Diş Hastanesi -> info@dentistanbul.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679871108_68nl",
+      "timestamp": "00:17:51",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dentistanbul Diş Hastanesi -> http://dentistanbulhospital.com/"
+    },
+    {
+      "id": "1789679869906_abf8",
+      "timestamp": "00:17:49",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: İSTANBUL KLİNİK AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ -> info@istanbulklinik.com.tr [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679869261_57qx",
+      "timestamp": "00:17:49",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: İSTANBUL KLİNİK AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ -> https://www.istanbulklinik.net/"
+    },
+    {
+      "id": "1789679867778_3uua",
+      "timestamp": "00:17:47",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Omer Istanbul Dental Clinic Turkey -> https://www.omeristanbul.com/"
+    },
+    {
+      "id": "1789679866576_pm0q",
+      "timestamp": "00:17:46",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Klinik İstanbul Ağız ve Diş Sağlığı Polikliniği -> info@klinik-istanbul.com [dis_klinigi / İstanbul]"
+    },
+    {
+      "id": "1789679862985_f5gt",
+      "timestamp": "00:17:42",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Klinik İstanbul Ağız ve Diş Sağlığı Polikliniği -> http://www.klinik-istanbul.com/"
+    },
+    {
+      "id": "1789679862980_a2wo",
+      "timestamp": "00:17:42",
+      "type": "SCRAPER",
+      "message": "\"İstanbul diş polikliniği\" aramasında 19 web sitesi olan gerçek işletme tespit edildi."
+    },
+    {
+      "id": "1789679852871_0999",
+      "timestamp": "00:17:32",
+      "type": "SCRAPER",
+      "message": "📍 Google Haritalar taranıyor: \"İstanbul diş polikliniği\" (İstanbul)"
+    },
+    {
+      "id": "1789679852819_cae4",
+      "timestamp": "00:17:32",
+      "type": "SYSTEM",
+      "message": "SMTP Sunucu bağlantısı doğrulandı: okan.ari@volreonai.com"
+    },
+    {
+      "id": "1789679849465_eef2",
+      "timestamp": "00:17:29",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Op.Dr.Sinan Öztürk - Estetik ve Plastik Cerrahi Uzmanı -> http://www.opdrsinanozturk.com/"
+    },
+    {
+      "id": "1789679848263_6djo",
+      "timestamp": "00:17:28",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Estetik Cerrahi Uzmanı Op. Dr. Ali Cem Oktay, Plastik Rekonstrüktif Ve Estetik Cerrahi -> acemoktay@gmail.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679847632_iwty",
+      "timestamp": "00:17:27",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik Cerrahi Uzmanı Op. Dr. Ali Cem Oktay, Plastik Rekonstrüktif Ve Estetik Cerrahi -> https://alicemoktay.com/"
+    },
+    {
+      "id": "1789679846428_nhs5",
+      "timestamp": "00:17:26",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Op. Dr. Fatih Söylemez | Estetik Cerrah -> info@fatihsoylemez.com.tr [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679846292_x3w3",
+      "timestamp": "00:17:26",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Op. Dr. Fatih Söylemez | Estetik Cerrah -> https://www.fatihsoylemez.com.tr/"
+    },
+    {
+      "id": "1789679845089_q2yk",
+      "timestamp": "00:17:25",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Estetik ve Plastik Cerrahi Merkezi - Esteaura -> info@esteaura.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679844053_u1de",
+      "timestamp": "00:17:24",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik ve Plastik Cerrahi Merkezi - Esteaura -> https://esteaura.com/"
+    },
+    {
+      "id": "1789679842852_ffa1",
+      "timestamp": "00:17:22",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Estetik International -> info@estetikinternational.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679842267_faj4",
+      "timestamp": "00:17:22",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik International -> https://www.estetikinternational.com/"
+    },
+    {
+      "id": "1789679841065_okns",
+      "timestamp": "00:17:21",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Dr. Yavuz Özsular Plastik Rekonstrüktif ve Estetik Cerrahi Uzmanı -> info@yavuzozsular.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679838820_u74f",
+      "timestamp": "00:17:18",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Dr. Yavuz Özsular Plastik Rekonstrüktif ve Estetik Cerrahi Uzmanı -> https://yavuzozsular.com/"
+    },
+    {
+      "id": "1789679837618_m5pm",
+      "timestamp": "00:17:17",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Prof. Dr. Hakan Şirinoğlu Estetik ve Plastik Cerrahi Kliniği -> info@hakansirinoglu.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679835098_643k",
+      "timestamp": "00:17:15",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Prof. Dr. Hakan Şirinoğlu Estetik ve Plastik Cerrahi Kliniği -> http://www.hakansirinoglu.com/"
+    },
+    {
+      "id": "1789679833896_8b2v",
+      "timestamp": "00:17:13",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Doç.Dr.Andaç AYKAN -> consultation@aykanclinic.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679833559_x7lk",
+      "timestamp": "00:17:13",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Doç.Dr.Andaç AYKAN -> https://andacaykan.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_profile"
+    },
+    {
+      "id": "1789679832357_wbct",
+      "timestamp": "00:17:12",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Estetik Ve Plastik Cerrahi Kliniği Dr. Emre Özenalp -> press@linktr.ee [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679831496_l9hx",
+      "timestamp": "00:17:11",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Estetik Ve Plastik Cerrahi Kliniği Dr. Emre Özenalp -> http://linktr.ee/dremreozenalp"
+    },
+    {
+      "id": "1789679830292_ppih",
+      "timestamp": "00:17:10",
+      "type": "SUCCESS",
+      "message": "🎯 GERÇEK LEAD: Prof. Dr. Cengiz Açıkel - Estetik Plastik Cerrah -> drca.ofis@gmail.com [estetik_merkezi / İstanbul]"
+    },
+    {
+      "id": "1789679829685_9e0c",
+      "timestamp": "00:17:09",
+      "type": "SCRAPER",
+      "message": "İşletme web sitesi taranıyor: Prof. Dr. Cengiz Açıkel - Estetik Plastik Cerrah -> http://www.cengizacikel.com/"
+    },
+    {
+      "id": "1789679829680_km1h",
+      "timestamp": "00:17:09",
+      "type": "SCRAPER",
+      "message": "\"İstanbul estetik cerrahi kliniği\" aramasında 19 web sitesi olan gerçek işletme tespit edildi."
+    },
+    {
+      "id": "1789679820863_bugd",
+      "timestamp": "00:17:00",
+      "type": "SYSTEM",
+      "message": "Kuyrukta bekleyen e-posta kalmadı. Scraper veri çekmeye devam ediyor..."
+    },
+    {
+      "id": "1789679820815_qrhd",
+      "timestamp": "00:17:00",
+      "type": "SCRAPER",
+      "message": "📍 Google Haritalar taranıyor: \"İstanbul estetik cerrahi kliniği\" (İstanbul)"
+    },
+    {
+      "id": "1789679796893_6moc",
+      "timestamp": "00:16:36",
+      "type": "ERROR",
+      "message": "Test e-postası gönderilemedi: Data command failed: 451 Requested action aborted: This mail account has sent too many messages in a short amount of time. Please try later."
+    },
+    {
+      "id": "1789679779144_u7gf",
+      "timestamp": "00:16:19",
+      "type": "ERROR",
+      "message": "Google Haritalar tarama hatası: Navigating frame was detached"
+    },
+    {
+      "id": "1789679775811_ptne",
+      "timestamp": "00:16:15",
+      "type": "SCRAPER",
+      "message": "📍 Google Haritalar taranıyor: \"İstanbul diş polikliniği\" (İstanbul)"
+    },
+    {
+      "id": "1789679775766_d17n",
+      "timestamp": "00:16:15",
+      "type": "SYSTEM",
+      "message": "SMTP Sunucu bağlantısı doğrulandı: okan.ari@volreonai.com"
+    }
+  ]
+}

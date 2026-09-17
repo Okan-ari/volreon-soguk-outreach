@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLREON AI — Soğuk Data & Outreach Komuta Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="app-container">
+    
+    <!-- Üst Header -->
+    <header class="header">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div>
+          <div class="logo-title">VOLREON <span>AI</span></div>
+          <div class="logo-subtitle">B2B Soğuk E-Posta & Açık Veri Otomasyonu</div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="countdown-badge" id="countdownContainer">
+          <div class="timer-icon">⏳</div>
+          <div class="timer-text">
+            <span>Sıradaki Gönderim:</span>
+            <strong id="timerVal">45s</strong>
+          </div>
+          <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+        </div>
+
+        <div class="status-badge active" id="systemStatusBadge">
+          <span class="pulse-dot"></span>
+          <span id="statusText">CANLI / AKTİF</span>
+        </div>
+
+        <button class="btn btn-toggle" id="btnToggleSystem" onclick="toggleSystem()">
+          <span id="btnToggleIcon">⏸</span>
+          <span id="btnToggleText">Durdur</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Metrik Kartları -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon purple">🌐</div>
+        <div class="stat-info">
+          <div class="stat-label">Taranan İşletme</div>
+          <div class="stat-value" id="statScraped">0</div>
+        </div>
+        <div class="stat-trend">Açık Web Taraması</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon blue">🎯</div>
+        <div class="stat-info">
+          <div class="stat-label">Yakalanan Lead</div>
+          <div class="stat-value" id="statFound">0</div>
+        </div>
+        <div class="stat-trend">KVKK Uyumlu İletişim</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon green">🚀</div>
+        <div class="stat-info">
+          <div class="stat-label">Gönderilen E-posta</div>
+          <div class="stat-value" id="statSent">0</div>
+        </div>
+        <div class="stat-trend">Kişiselleştirilmiş Teklif</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon amber">⏳</div>
+        <div class="stat-info">
+          <div class="stat-label">Kuyrukta Bekleyen</div>
+          <div class="stat-value" id="statPending">0</div>
+        </div>
+        <div class="stat-trend">45s Aralıkla Gönderim</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon teal">📈</div>
+        <div class="stat-info">
+          <div class="stat-label">Başarı Oranı</div>
+          <div class="stat-value" id="statRate">100%</div>
+        </div>
+        <div class="stat-trend" id="statFailed">0 Hata</div>
+      </div>
+    </section>
+
+    <!-- Ana Çalışma Alanı -->
+    <div class="workspace-grid">
+      
+      <!-- Sol Panel: Hızlı Kontroller & Terminal -->
+      <aside class="sidebar-panel">
+        
+        <!-- Otomatik Kategori & Şehir Seçimli Data Kazıma -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <h3>🎯 Hedef Kategori & Şehir Taraması</h3>
+          </div>
+          <form id="categoryTargetForm" onsubmit="handleCategorySearch(event)">
+            <div class="form-group">
+              <label>İşletme Kategorisi (20 Sektör)</label>
+              <select id="selectCategory" required>
+                <!-- JS ile dinamik 20 kategori yüklenecek -->
+                <option value="" disabled selected>Kategori Seçiniz...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Hedef Şehir</label>
+              <select id="selectCity" required>
+                <!-- JS ile dinamik şehirler yüklenecek -->
+                <option value="İstanbul">İstanbul</option>
+                <option value="Ankara">Ankara</option>
+                <option value="İzmir">İzmir</option>
+                <option value="Antalya">Antalya</option>
+                <option value="Bursa">Bursa</option>
+                <option value="Muğla">Muğla (Bodrum/Fethiye)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-full" id="btnStartTarget">
+              <span>🚀</span> Bu Sektör & Şehirde Taramayı Başlat
+            </button>
+            <div style="font-size: 0.72rem; color: #64748b; margin-top: 8px; text-align: center;">
+              *Anahtar kelimeler sistem tarafından otomatik üretilir, web siteleri taranıp e-postalar doğrudan kuyruğa eklenir.
+            </div>
+          </form>
+        </div>
+
+        <!-- Hızlı Test Maili Gönderme -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <h3>✉️ Hızlı Test Maili Gönder</h3>
+          </div>
+          <form id="testEmailForm" onsubmit="handleTestEmail(event)">
+            <div class="form-group">
+              <label>Hedef E-Posta</label>
+              <input type="email" id="inputTestEmail" value="okan.ari@volreonai.com" required>
+            </div>
+            <button type="submit" class="btn btn-secondary w-full" id="btnTestMail">
+              <span>📤</span> Test Mailini Gönder
+            </button>
+          </form>
+        </div>
+
+        <!-- Canlı Terminal / Log Akışı -->
+        <div class="panel-card terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">CANLI İŞLEM LOGLARI (SSE)</div>
+            <button class="btn-text" onclick="clearLogs()">Temizle</button>
+          </div>
+          <div class="terminal-body" id="terminalLogs">
+            <div class="log-row system">
+              <span class="log-time">[Başlatılıyor]</span>
+              <span class="log-badge system">SİSTEM</span>
+              <span class="log-msg">Volreon Soğuk Outreach Komuta Merkezi Hazırlandı...</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Sağ Panel: Canlı Lead Tablosu -->
+      <main class="main-panel">
+        <div class="panel-card table-card">
+          <div class="panel-header table-header-area">
+            <div>
+              <h3>📋 Lead Havuzu & Gönderim Kuyruğu</h3>
+              <p class="section-desc">Otomatik toplanan veriler ve 45 saniyede bir gönderilen teklifler.</p>
+            </div>
+            <div class="table-actions">
+              <div class="filter-group">
+                <button class="filter-btn active" onclick="filterLeads('all')">Tümü (<span id="countAll">0</span>)</button>
+                <button class="filter-btn" onclick="filterLeads('BEKLEMEDE')">Kuyrukta (<span id="countPending">0</span>)</button>
+                <button class="filter-btn" onclick="filterLeads('GONDERILDI')">Gönderildi (<span id="countSent">0</span>)</button>
+              </div>
+              <input type="text" id="tableSearch" class="search-input" placeholder="İşletme veya e-posta ara..." onkeyup="handleSearchTable()">
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="leads-table">
+              <thead>
+                <tr>
+                  <th>İşletme Adı</th>
+                  <th>Sektör</th>
+                  <th>İletişim E-Postası</th>
+                  <th>Web Sitesi</th>
+                  <th>Durum</th>
+                  <th>İşlemler</th>
+                </tr>
+              </thead>
+              <tbody id="leadsTableBody">
+                <tr>
+                  <td colspan="6" class="empty-state">
+                    <div class="empty-spinner"></div>
+                    <div>Veriler yükleniyor ve açık web taranıyor...</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Mail Önizleme Modalı -->
+  <div class="modal-overlay" id="previewModal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modalTitle">E-Posta Şablon Önizlemesi</h3>
+        <button class="btn-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

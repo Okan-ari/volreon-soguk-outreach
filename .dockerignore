@@ -1,0 +1,20 @@
+# Git
+.git/
+.gitignore
+
+# Data (Railway'de volume kullanılacak, her deploy sıfırlanmasın)
+# data/ klasörü paylaşılıyor ama leads.json deploy'da sıfırlanır
+# Bu normaldir - Railway'de persistent volume kullanmak için ayrıca ayar gerekir
+
+# Node modules
+node_modules/
+
+# Local env (Railway env vars ile override edilecek)
+.env
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+/tmp/
