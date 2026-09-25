@@ -1,0 +1,27 @@
+<!-- VOLREON AI — MASTER SYMBOL (WHITE MONOCHROME) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M 16 20
+           H 36
+           L 54 66
+           L 54 20
+           H 84
+           C 101 20, 108 29, 108 43
+           C 108 54, 101 62, 88 64
+           L 108 98
+           H 86
+           L 68 66
+           H 54
+           L 54 98
+           H 36
+           L 16 20
+           Z
+           M 54 36
+           V 52
+           H 80
+           C 87 52, 91 48, 91 43
+           C 91 38, 87 36, 80 36
+           H 54
+           Z" 
+        fill="#ffffff" />
+</svg>

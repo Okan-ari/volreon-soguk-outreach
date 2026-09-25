@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLREON AI — Kusursuz Hizalanmış Kurumsal İmza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #080a0f;
+      color: #f1f5f9;
+      padding: 30px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #a5b4fc;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.92rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Kriter Kontrol Listesi */
+    .checklist-bar {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px 20px;
+      margin: 18px auto 25px auto;
+      max-width: 780px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: #cbd5e1;
+    }
+    .c-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .c-item i {
+      color: #10b981;
+    }
+
+    /* Tab Butonları */
+    .tab-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover {
+      border-color: #6366f1;
+      color: #fff;
+    }
+    .tab-btn.active {
+      background: #6366f1;
+      border-color: #6366f1;
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    }
+
+    /* E-posta Simülatörü */
+    .email-client-mockup {
+      background: #ffffff;
+      color: #1e293b;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+    .client-header {
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .client-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot.red { background: #ef4444; }
+    .dot.yellow { background: #f59e0b; }
+    .dot.green { background: #10b981; }
+
+    .client-subject {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #334155;
+    }
+    .client-meta {
+      font-size: 0.72rem;
+      color: #64748b;
+    }
+
+    .email-body {
+      padding: 24px 28px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #1e293b;
+    }
+    .email-body p {
+      margin-bottom: 12px;
+    }
+    .email-body ul {
+      margin-bottom: 14px;
+      padding-left: 20px;
+      color: #334155;
+    }
+    .email-body li {
+      margin-bottom: 6px;
+    }
+
+    .signature-card-wrap {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+    .signature-card-wrap.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .design-meta-box {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 15px;
+    }
+    .design-meta-box h3 {
+      font-size: 0.95rem;
+      color: #a5b4fc;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .design-meta-box p {
+      font-size: 0.84rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="badge"><i class="fas fa-check-circle"></i> İNCE AYARLAR UYGULANDI</div>
+      <h1>VOLREON AI — Revize Edilmiş Kurumsal İmza</h1>
+      <p class="subtitle">AI rozetleri milimetrik hizalandı, unvan koyu siyahımsı mor ve kalın yapıldı, Tel / Web / E-posta tek satırda siyah/koyu renge çekildi.</p>
+
+      <div class="checklist-bar">
+        <div class="c-item"><i class="fas fa-check-circle"></i> Unvan: Koyu Siyahımsı Mor (#312e81) & Kalın (800)</div>
+        <div class="c-item"><i class="fas fa-check-circle"></i> AI Rozetleri: Kelimeyle Tam Yatay Eşitlendi</div>
+        <div class="c-item"><i class="fas fa-check-circle"></i> Tel | Web | E-posta: Yan Yana & Siyah Renk</div>
+        <div class="c-item"><i class="fas fa-check-circle"></i> Sadece "Kurumsal İletişim"</div>
+      </div>
+
+      <!-- Tab Butonları -->
+      <div class="tab-bar">
+        <button class="tab-btn active" onclick="switchTab(1)">
+          ⭐ Revize 1: Derin Gece İndigosu (#312e81 - Önerilen)
+        </button>
+        <button class="tab-btn" onclick="switchTab(2)">
+          Revize 2: Ultra Koyu Siyah-Mor (#1e1b4b)
+        </button>
+      </div>
+    </div>
+
+    <!-- E-POSTA MOCKUP KUTUSU -->
+    <div class="email-client-mockup">
+      <div class="client-header">
+        <div class="client-dots">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+        </div>
+        <div class="client-subject">Kurumsal Yapay Zeka İletişim Otomasyonu</div>
+        <div class="client-meta">Bugün 15:50 · Gelen Kutusu</div>
+      </div>
+
+      <div class="email-body">
+        <p>Merhaba Derya Hanım,</p>
+        <p>Poliçe bitiş tarihine az kalan müşteriler anında fiyat öğrenmek ister; telefonda uzun süre beklemek istemez.</p>
+        <p><strong>VOLREON AI</strong> olarak sektörünüze özel geliştirdiğimiz yapay zeka santral ve iletişim otomasyonu ile bu süreci sıfır personel eforuyla çözüyoruz:</p>
+        <ul>
+          <li><strong>Ruhsat ve TC Bilgisi Toplama:</strong> Arayan veya yazan müşterinin plaka/TC bilgisini alıp teklif havuzuna iletir.</li>
+          <li><strong>Poliçe Yenileme Hatırlatma:</strong> Vadesi yaklaşan müşterilere WhatsApp’tan otomatik teklif sunar.</li>
+          <li><strong>Hasar Anında Rehberlik:</strong> Kaza anında yapılması gereken adımları ve çekici numarasını anında paylaşır.</li>
+        </ul>
+        <p>Sistemimizi mevcut telefon numaranızı ve düzeninizi hiç değiştirmeden 24 saat içinde devreye alabiliyoruz.</p>
+        <p>Size veya operasyon yöneticinize 5 dakikalık canlı bir sesli asistan demosu sunmaktan memnuniyet duyarız. Bu e-postaya kısaca yanıt vermeniz yeterlidir.</p>
+
+        <p style="margin-top: 24px; margin-bottom: 12px; color: #64748b; font-size: 14px;">Saygılarımla,</p>
+
+        <!-- ═══════════════════════════════════════════════
+             REVİZE 1: DERİN GECE İNDİGOSU (#312e81)
+             ═══════════════════════════════════════════════ -->
+        <div class="signature-card-wrap active" id="sig-1">
+          <!-- İMZA 1 BAŞLANGICI -->
+          <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px; margin-bottom: 15px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+            <tr>
+              <!-- Sol Kolon: Kurumsal Koyu Logo Kutusu -->
+              <td style="vertical-align: top; padding-right: 18px; width: 86px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width: 86px; height: 86px; background: #080b11; border-radius: 12px; text-align: center; border: 1px solid #1e293b;">
+                  <tr>
+                    <td style="vertical-align: middle; padding: 7px 5px; text-align: center;">
+                      <!-- Orijinal V-R Kinetik Master Sembolü -->
+                      <svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto 6px auto;">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M 16 20
+                                 H 36
+                                 L 54 66
+                                 L 54 20
+                                 H 84
+                                 C 101 20, 108 29, 108 43
+                                 C 108 54, 101 62, 88 64
+                                 L 108 98
+                                 H 86
+                                 L 68 66
+                                 H 54
+                                 L 54 98
+                                 H 36
+                                 L 16 20
+                                 Z
+                                 M 54 36
+                                 V 52
+                                 H 80
+                                 C 87 52, 91 48, 91 43
+                                 C 91 38, 87 36, 80 36
+                                 H 54
+                                 Z" 
+                              fill="#ffffff" />
+                      </svg>
+                      <!-- Sitedeki Orijinal Tipografi: Poppins + Tam Yatay Eşitlenmiş AI Rozeti -->
+                      <div style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 800; color: #ffffff; letter-spacing: 0.08em; line-height: 14px; text-align: center; white-space: nowrap;">
+                        <span style="display: inline-block; vertical-align: middle;">VOLREON</span><span style="font-size: 6.8px; font-weight: 900; background: rgba(99, 102, 241, 0.3); border: 1px solid rgba(99, 102, 241, 0.6); color: #c4b5fd; padding: 1px 3px; border-radius: 2.5px; letter-spacing: 0.04em; display: inline-block; vertical-align: middle; margin-left: 3px; line-height: 1;">AI</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- Dikey İnce Ayrım Çizgisi -->
+              <td style="border-left: 2px solid #e2e8f0; width: 1px; padding: 0;"></td>
+
+              <!-- Sağ Kolon: İsim ve Kurumsal İletişim -->
+              <td style="vertical-align: top; padding-left: 18px;">
+                <div style="font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1.2; letter-spacing: -0.3px;">
+                  Okan Arı
+                </div>
+                
+                <!-- Unvan: Siyahımsı Koyu Mor (#312e81) & Kalın (800) -->
+                <div style="font-size: 11px; font-weight: 800; color: #312e81; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 3px;">
+                  Kurucu & Yapay Zeka Sistem Mimarı
+                </div>
+                
+                <!-- VOLREON [AI] · Kurumsal İletişim (AI Rozeti Tam Eşitlendi) -->
+                <div style="font-size: 12.5px; font-weight: 600; color: #475569; margin-top: 3px; margin-bottom: 8px; line-height: 16px;">
+                  <span style="font-family: 'Poppins', sans-serif; font-weight: 800; color: #0f172a; letter-spacing: 0.04em; display: inline-block; vertical-align: middle;">VOLREON</span><span style="font-size: 7.5px; font-weight: 900; background: rgba(99, 102, 241, 0.18); border: 1px solid rgba(99, 102, 241, 0.45); color: #312e81; padding: 1px 4px; border-radius: 3px; display: inline-block; vertical-align: middle; margin-left: 3px; margin-right: 4px; line-height: 1;">AI</span><span style="display: inline-block; vertical-align: middle;">· Kurumsal İletişim</span>
+                </div>
+
+                <!-- İletişim Bilgileri: TEK SATIRDA, SADECE TEL | WEB | E-POSTA (HEPSİ SİYAH / #0f172a) -->
+                <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12.5px; color: #0f172a;">
+                  <tr>
+                    <td style="padding-bottom: 4px; white-space: nowrap;">
+                      <span style="color: #0f172a; font-weight: 700;">Tel:</span> 
+                      <a href="tel:+905073205781" style="color: #0f172a; text-decoration: none; font-weight: 600;">+90 507 320 57 81</a>
+                      <span style="color: #cbd5e1; margin: 0 8px;">|</span>
+                      <span style="color: #0f172a; font-weight: 700;">Web:</span> 
+                      <a href="https://volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">volreonai.com</a>
+                      <span style="color: #cbd5e1; margin: 0 8px;">|</span>
+                      <span style="color: #0f172a; font-weight: 700;">E-posta:</span> 
+                      <a href="mailto:okan.ari@volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">okan.ari@volreonai.com</a>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Güven ve Gizlilik İbaresi -->
+                <div style="font-size: 10.5px; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 6px; margin-top: 4px;">
+                  🔒 Meta Business API Entegrasyonu · KVKK Uyumlu Otonom Altyapı
+                </div>
+              </td>
+            </tr>
+          </table>
+          <!-- İMZA 1 SONU -->
+        </div>
+
+        <!-- ═══════════════════════════════════════════════
+             REVİZE 2: ULTRA KOYU SİYAH-MOR (#1e1b4b)
+             ═══════════════════════════════════════════════ -->
+        <div class="signature-card-wrap" id="sig-2">
+          <!-- İMZA 2 BAŞLANGICI -->
+          <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px; margin-bottom: 15px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+            <tr>
+              <!-- Sol Kolon -->
+              <td style="vertical-align: top; padding-right: 18px; width: 86px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width: 86px; height: 86px; background: #080b11; border-radius: 12px; text-align: center; border: 1px solid #1e293b;">
+                  <tr>
+                    <td style="vertical-align: middle; padding: 7px 5px; text-align: center;">
+                      <svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto 6px auto;">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M 16 20 H 36 L 54 66 L 54 20 H 84 C 101 20, 108 29, 108 43 C 108 54, 101 62, 88 64 L 108 98 H 86 L 68 66 H 54 L 54 98 H 36 L 16 20 Z M 54 36 V 52 H 80 C 87 52, 91 48, 91 43 C 91 38, 87 36, 80 36 H 54 Z" 
+                              fill="#ffffff" />
+                      </svg>
+                      <div style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 800; color: #ffffff; letter-spacing: 0.08em; line-height: 14px; text-align: center; white-space: nowrap;">
+                        <span style="display: inline-block; vertical-align: middle;">VOLREON</span><span style="font-size: 6.8px; font-weight: 900; background: rgba(99, 102, 241, 0.3); border: 1px solid rgba(99, 102, 241, 0.6); color: #c4b5fd; padding: 1px 3px; border-radius: 2.5px; letter-spacing: 0.04em; display: inline-block; vertical-align: middle; margin-left: 3px; line-height: 1;">AI</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- Dikey Çizgi -->
+              <td style="border-left: 2px solid #e2e8f0; width: 1px; padding: 0;"></td>
+
+              <!-- Sağ Kolon -->
+              <td style="vertical-align: top; padding-left: 18px;">
+                <div style="font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1.2; letter-spacing: -0.3px;">
+                  Okan Arı
+                </div>
+                
+                <!-- Unvan: Ultra Koyu Siyah-Mor (#1e1b4b) -->
+                <div style="font-size: 11px; font-weight: 800; color: #1e1b4b; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 3px;">
+                  Kurucu & Yapay Zeka Sistem Mimarı
+                </div>
+                
+                <div style="font-size: 12.5px; font-weight: 600; color: #475569; margin-top: 3px; margin-bottom: 8px; line-height: 16px;">
+                  <span style="font-family: 'Poppins', sans-serif; font-weight: 800; color: #0f172a; letter-spacing: 0.04em; display: inline-block; vertical-align: middle;">VOLREON</span><span style="font-size: 7.5px; font-weight: 900; background: rgba(99, 102, 241, 0.18); border: 1px solid rgba(99, 102, 241, 0.45); color: #1e1b4b; padding: 1px 4px; border-radius: 3px; display: inline-block; vertical-align: middle; margin-left: 3px; margin-right: 4px; line-height: 1;">AI</span><span style="display: inline-block; vertical-align: middle;">· Kurumsal İletişim</span>
+                </div>
+
+                <!-- Tek Satır İletişim (Siyah) -->
+                <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12.5px; color: #0f172a;">
+                  <tr>
+                    <td style="padding-bottom: 4px; white-space: nowrap;">
+                      <span style="color: #0f172a; font-weight: 700;">Tel:</span> 
+                      <a href="tel:+905073205781" style="color: #0f172a; text-decoration: none; font-weight: 600;">+90 507 320 57 81</a>
+                      <span style="color: #cbd5e1; margin: 0 8px;">|</span>
+                      <span style="color: #0f172a; font-weight: 700;">Web:</span> 
+                      <a href="https://volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">volreonai.com</a>
+                      <span style="color: #cbd5e1; margin: 0 8px;">|</span>
+                      <span style="color: #0f172a; font-weight: 700;">E-posta:</span> 
+                      <a href="mailto:okan.ari@volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">okan.ari@volreonai.com</a>
+                    </td>
+                  </tr>
+                </table>
+
+                <div style="font-size: 10.5px; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 6px; margin-top: 4px;">
+                  🔒 Meta Business API Entegrasyonu · KVKK Uyumlu Otonom Altyapı
+                </div>
+              </td>
+            </tr>
+          </table>
+          <!-- İMZA 2 SONU -->
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0 14px 0;">
+        <p style="font-size: 11px; color: #94a3b8; line-height: 1.4; margin: 0;">Bu e-posta, işletmenizin internete açık kurumsal iletişim bilgileri üzerinden B2B bilgilendirme amacıyla iletilmiştir. Tekrar e-posta almak istemiyorsanız lütfen bu e-postayı "İptal" yazarak yanıtlayınız.</p>
+      </div>
+    </div>
+
+    <!-- SEÇENEK DETAYLARI VE AÇIKLAMALARI -->
+    <div class="design-meta-box" id="meta-1">
+      <h3>⭐ Revize 1: Derin Gece İndigosu (#312e81 - Önerilen)</h3>
+      <p>Unvan koyu siyahımsı asil bir mor/indigo tonunda ve 800 kalınlığındadır. Logo kutusundaki ve unvan satırındaki "AI" rozetleri kelimeyle tam dikey eksende eşitlenmiştir. Telefon, Web ve E-posta tek bir şık satırda toplanmış ve tamamı siyah renk yapılmıştır.</p>
+    </div>
+
+    <div class="design-meta-box" id="meta-2" style="display: none;">
+      <h3>Revize 2: Ultra Koyu Siyah-Mor (#1e1b4b)</h3>
+      <p>Unvan siyaha daha da yakın, çok hafif mor kırılımlı gece rengindedir (#1e1b4b). Ciddi ve yüksek kontrastlıdır.</p>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(idx) {
+      document.querySelectorAll('.tab-btn').forEach((b, i) => {
+        b.classList.toggle('active', i === (idx - 1));
+      });
+      document.querySelectorAll('.signature-card-wrap').forEach((el, i) => {
+        el.classList.toggle('active', i === (idx - 1));
+      });
+      document.querySelectorAll('.design-meta-box').forEach((el, i) => {
+        el.style.display = (i === (idx - 1)) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
