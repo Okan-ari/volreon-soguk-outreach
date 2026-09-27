@@ -242,88 +242,52 @@ function getEmailContent(lead) {
       
       <p style="margin-top: 32px; margin-bottom: 4px; color: #64748b; font-size: 14px;">Saygılarımla,</p>
       
-      <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 18px; margin-bottom: 22px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+      <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 18px; margin-bottom: 20px; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; border-collapse: collapse;">
         <tr>
-          <!-- Sol Kolon: Kurumsal Koyu Logo Kutusu -->
-          <td style="vertical-align: top; padding-right: 18px; width: 86px;">
-            <table cellpadding="0" cellspacing="0" border="0" style="width: 86px; height: 86px; background: #080b11; border-radius: 12px; text-align: center; border: 1px solid #1e293b;">
-              <tr>
-                <td style="vertical-align: middle; padding: 7px 5px; text-align: center;">
-                  <!-- Orijinal V-R Kinetik Master Sembolü -->
-                  <svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto 6px auto;">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M 16 20
-                             H 36
-                             L 54 66
-                             L 54 20
-                             H 84
-                             C 101 20, 108 29, 108 43
-                             C 108 54, 101 62, 88 64
-                             L 108 98
-                             H 86
-                             L 68 66
-                             H 54
-                             L 54 98
-                             H 36
-                             L 16 20
-                             Z
-                             M 54 36
-                             V 52
-                             H 80
-                             C 87 52, 91 48, 91 43
-                             C 91 38, 87 36, 80 36
-                             H 54
-                             Z" 
-                          fill="#ffffff" />
-                  </svg>
-                  <!-- Sitedeki Orijinal Tipografi: Poppins + Tam Yatay Eşitlenmiş AI Rozeti -->
-                  <div style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 800; color: #ffffff; letter-spacing: 0.08em; line-height: 14px; text-align: center; white-space: nowrap;">
-                    <span style="display: inline-block; vertical-align: middle;">VOLREON</span><span style="font-size: 6.8px; font-weight: 900; background: rgba(99, 102, 241, 0.3); border: 1px solid rgba(99, 102, 241, 0.6); color: #c4b5fd; padding: 1px 3px; border-radius: 2.5px; letter-spacing: 0.04em; display: inline-block; vertical-align: middle; margin-left: 3px; line-height: 1;">AI</span>
-                  </div>
-                </td>
-              </tr>
-            </table>
+          <!-- Sol Kolon: Kurumsal Koyu Logo Rozeti (Outlook, Gmail ve Tüm E-posta İstemcileriyle %100 Uyumlu PNG) -->
+          <td style="vertical-align: top; padding-right: 16px; width: 86px;" width="86">
+            <a href="https://volreonai.com" target="_blank" style="text-decoration: none; display: block;">
+              <img src="https://raw.githubusercontent.com/Okan-ari/volreon-soguk-outreach/main/public/assets/volreon-badge-86.png" 
+                   width="86" 
+                   height="86" 
+                   alt="VOLREON AI" 
+                   border="0" 
+                   style="display: block; width: 86px; height: 86px; border-radius: 12px; border: 1px solid #1e293b; background-color: #080b11;" />
+            </a>
           </td>
 
           <!-- Dikey İnce Ayrım Çizgisi -->
-          <td style="border-left: 2px solid #e2e8f0; width: 1px; padding: 0;"></td>
+          <td style="border-left: 2px solid #e2e8f0; width: 1px; padding: 0;" width="1"></td>
 
-          <!-- Sağ Kolon: İsim ve Kurumsal İletişim -->
-          <td style="vertical-align: top; padding-left: 18px;">
-            <div style="font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1.2; letter-spacing: -0.3px;">
-              Okan Arı
-            </div>
-            
-            <!-- Unvan: Siyahımsı Koyu Mor (#312e81) & Kalın (800) -->
-            <div style="font-size: 11px; font-weight: 800; color: #312e81; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 3px;">
-              Kurucu & Yapay Zeka Sistem Mimarı
-            </div>
-            
-            <!-- VOLREON [AI] · Kurumsal İletişim -->
-            <div style="font-size: 12.5px; font-weight: 600; color: #475569; margin-top: 3px; margin-bottom: 8px; line-height: 16px;">
-              <span style="font-family: 'Poppins', sans-serif; font-weight: 800; color: #0f172a; letter-spacing: 0.04em; display: inline-block; vertical-align: middle;">VOLREON</span><span style="font-size: 7.5px; font-weight: 900; background: rgba(99, 102, 241, 0.18); border: 1px solid rgba(99, 102, 241, 0.45); color: #312e81; padding: 1px 4px; border-radius: 3px; display: inline-block; vertical-align: middle; margin-left: 3px; margin-right: 4px; line-height: 1;">AI</span><span style="display: inline-block; vertical-align: middle;">· Kurumsal İletişim</span>
-            </div>
-
-            <!-- İletişim Bilgileri: TEK SATIRDA, SADECE TEL | WEB | E-POSTA (HEPSİ SİYAH / #0f172a) -->
-            <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12.5px; color: #0f172a;">
+          <!-- Sağ Kolon: İsim, Unvan ve İletişim (Outlook Gapsız / Sıkı Satır Tablosu) -->
+          <td style="vertical-align: top; padding-left: 16px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; border-collapse: collapse;">
               <tr>
-                <td style="padding-bottom: 4px; white-space: nowrap;">
-                  <span style="color: #0f172a; font-weight: 700;">Tel:</span> 
-                  <a href="tel:+905073205781" style="color: #0f172a; text-decoration: none; font-weight: 600;">+90 507 320 57 81</a>
-                  <span style="color: #cbd5e1; margin: 0 8px;">|</span>
-                  <span style="color: #0f172a; font-weight: 700;">Web:</span> 
-                  <a href="https://volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">volreonai.com</a>
-                  <span style="color: #cbd5e1; margin: 0 8px;">|</span>
-                  <span style="color: #0f172a; font-weight: 700;">E-posta:</span> 
-                  <a href="mailto:okan.ari@volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">okan.ari@volreonai.com</a>
+                <td style="padding: 0 0 2px 0; font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1.2; letter-spacing: -0.3px; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;">
+                  Okan Arı
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0 0 4px 0; font-size: 11px; font-weight: 800; color: #312e81; text-transform: uppercase; letter-spacing: 0.8px; line-height: 1.2; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;">
+                  Kurucu &amp; Yapay Zeka Sistem Mimarı
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0 0 7px 0; font-size: 12.5px; line-height: 1.3; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; white-space: nowrap;">
+                  <strong style="color: #0f172a; font-weight: 800;">VOLREON</strong>&nbsp;<span style="background-color: #e0e7ff; color: #312e81; font-size: 8.5px; font-weight: 900; padding: 1px 4px; border: 1px solid #818cf8; border-radius: 3px;">AI</span>&nbsp;<span style="color: #475569; font-weight: 600;">&middot; Kurumsal İletişim</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0 0 6px 0; font-size: 12px; color: #0f172a; line-height: 1.3; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; white-space: nowrap;">
+                  <strong style="color: #0f172a;">Tel:</strong>&nbsp;<a href="tel:+905073205781" style="color: #0f172a; text-decoration: none; font-weight: 600;">+90 507 320 57 81</a>&nbsp;<span style="color: #cbd5e1;">|</span>&nbsp;<strong style="color: #0f172a;">Web:</strong>&nbsp;<a href="https://volreonai.com" target="_blank" style="color: #0f172a; text-decoration: none; font-weight: 600;">volreonai.com</a>&nbsp;<span style="color: #cbd5e1;">|</span>&nbsp;<strong style="color: #0f172a;">E-posta:</strong>&nbsp;<a href="mailto:okan.ari@volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">okan.ari@volreonai.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 6px; border-top: 1px solid #f1f5f9; font-size: 10px; color: #94a3b8; line-height: 1.2; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;">
+                  🔒 Meta Business API Entegrasyonu &middot; KVKK Uyumlu Otonom Altyapı
                 </td>
               </tr>
             </table>
-
-            <!-- Güven ve Gizlilik İbaresi -->
-            <div style="font-size: 10.5px; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 6px; margin-top: 4px;">
-              🔒 Meta Business API Entegrasyonu · KVKK Uyumlu Otonom Altyapı
-            </div>
           </td>
         </tr>
       </table>

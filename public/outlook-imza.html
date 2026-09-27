@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLREON AI — Outlook İçin Kurumsal İmza Kurulum Aracı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #0f172a;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      color: #a5b4fc;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* Kopyalama ve Aksiyon Alanı */
+    .action-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    .action-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .action-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: #4f46e5;
+      background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+    }
+
+    /* Bildirim Toast */
+    .toast {
+      display: none;
+      background: #064e3b;
+      border: 1px solid #10b981;
+      color: #ecfdf5;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      align-items: center;
+      gap: 10px;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* İmza Önizleme Kutusu (Beyaz E-posta Zemini) */
+    .preview-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+      user-select: all;
+      overflow-x: auto;
+    }
+
+    .preview-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Adım Adım Kurulum Rehberi */
+    .guide-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 28px;
+    }
+
+    .guide-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+    }
+
+    .steps-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .step-number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(99, 102, 241, 0.2);
+      border: 1px solid #6366f1;
+      color: #c7d2fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.88rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-text {
+      color: #cbd5e1;
+      font-size: 0.94rem;
+    }
+
+    .step-text strong {
+      color: #ffffff;
+    }
+
+    .step-key {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: #f1f5f9;
+    }
+
+    /* HTML Kodu Akordiyon */
+    .code-toggle {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      font-size: 0.88rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      padding: 6px 0;
+    }
+
+    .code-toggle:hover {
+      color: #fff;
+    }
+
+    .code-box {
+      display: none;
+      margin-top: 12px;
+      background: #020617;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      max-height: 220px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Başlık -->
+    <div class="header">
+      <div class="badge">
+        <i class="fa-brands fa-microsoft"></i> Outlook Uyumlu Kurumsal İmza
+      </div>
+      <h1>Kopyalanabilir İmza & Outlook Kurulumu</h1>
+      <p class="subtitle">
+        Onayladığınız Revize 1 tasarımını tek tıkla panoya kopyalayıp Microsoft Outlook'a (Mac, Web veya Windows) anında yapıştırabilirsiniz.
+      </p>
+    </div>
+
+    <!-- Başarı Bildirimi -->
+    <div id="toast" class="toast">
+      <i class="fa-solid fa-circle-check" style="font-size: 1.2rem;"></i>
+      <span id="toastMsg">İmza başarıyla panoya kopyalandı! Şimdi Outlook'a geçip Cmd+V ile yapıştırabilirsiniz.</span>
+    </div>
+
+    <!-- Aksiyon Kartı & İmza Önizleme -->
+    <div class="action-card">
+      <div class="action-header">
+        <div class="action-title">
+          <i class="fa-solid fa-signature" style="color: #6366f1;"></i> Canlı İmza
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="copySignatureRichText()" id="btnCopy">
+            <i class="fa-solid fa-copy"></i> İmzayı Kopyala (Outlook İçin)
+          </button>
+          <button class="btn btn-secondary" onclick="selectSignature()">
+            <i class="fa-solid fa-object-ungroup"></i> Alanı Seç
+          </button>
+          <button class="btn btn-secondary" onclick="copyHtmlSource()">
+            <i class="fa-solid fa-code"></i> HTML Kopyala
+          </button>
+        </div>
+      </div>
+
+      <div class="preview-label">
+        <span>Görünüm (Beyaz E-posta Zemini)</span>
+        <span>Retina & Outlook Uyumlu</span>
+      </div>
+
+      <!-- KOPYALANACAK OLAN İMZA ALANI -->
+      <div class="preview-box" id="signatureContainer">
+        <!-- ════════════════════════════════════════════════════════════════════════
+             OUTLOOK ONAYLANAN REVİZE 1 KURUMSAL İMZA
+             ════════════════════════════════════════════════════════════════════════ -->
+        <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 10px; margin-bottom: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border-collapse: collapse;">
+          <tr>
+            <!-- Sol Kolon: Retina Kurumsal Koyu Logo Rozeti (Outlook'ta %100 Kusursuz Görüntülenir) -->
+            <td style="vertical-align: top; padding-right: 18px; width: 86px;">
+              <a href="https://volreonai.com" target="_blank" style="text-decoration: none; display: block;">
+                <img src="https://raw.githubusercontent.com/Okan-ari/volreon-soguk-outreach/main/public/assets/volreon-badge-86.png" 
+                     width="86" 
+                     height="86" 
+                     alt="VOLREON AI" 
+                     style="display: block; width: 86px; height: 86px; border-radius: 12px; border: 1px solid #1e293b; background-color: #080b11;" />
+              </a>
+            </td>
+
+            <!-- Dikey İnce Ayrım Çizgisi -->
+            <td style="border-left: 2px solid #e2e8f0; width: 1px; padding: 0;"></td>
+
+            <!-- Sağ Kolon: İsim, Unvan ve İletişim (Outlook İçin Sıfır Boşluk / Tek Satır Garantili Tablo) -->
+            <td style="vertical-align: top; padding-left: 16px;">
+              <table cellpadding="0" cellspacing="0" border="0" style="font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; border-collapse: collapse;">
+                <tr>
+                  <td style="padding: 0 0 2px 0; font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1.2; letter-spacing: -0.3px; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;">
+                    Okan Arı
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 4px 0; font-size: 11px; font-weight: 800; color: #312e81; text-transform: uppercase; letter-spacing: 0.8px; line-height: 1.2; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;">
+                    Kurucu &amp; Yapay Zeka Sistem Mimarı
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 7px 0; font-size: 12.5px; line-height: 1.3; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; white-space: nowrap;">
+                    <strong style="color: #0f172a; font-weight: 800;">VOLREON</strong>&nbsp;<span style="background-color: #e0e7ff; color: #312e81; font-size: 8.5px; font-weight: 900; padding: 1px 4px; border: 1px solid #818cf8; border-radius: 3px;">AI</span>&nbsp;<span style="color: #475569; font-weight: 600;">&middot; Kurumsal İletişim</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 6px 0; font-size: 12px; color: #0f172a; line-height: 1.3; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; white-space: nowrap;">
+                    <strong style="color: #0f172a;">Tel:</strong>&nbsp;<a href="tel:+905073205781" style="color: #0f172a; text-decoration: none; font-weight: 600;">+90 507 320 57 81</a>&nbsp;<span style="color: #cbd5e1;">|</span>&nbsp;<strong style="color: #0f172a;">Web:</strong>&nbsp;<a href="https://volreonai.com" target="_blank" style="color: #0f172a; text-decoration: none; font-weight: 600;">volreonai.com</a>&nbsp;<span style="color: #cbd5e1;">|</span>&nbsp;<strong style="color: #0f172a;">E-posta:</strong>&nbsp;<a href="mailto:okan.ari@volreonai.com" style="color: #0f172a; text-decoration: none; font-weight: 600;">okan.ari@volreonai.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top: 6px; border-top: 1px solid #f1f5f9; font-size: 10px; color: #94a3b8; line-height: 1.2; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;">
+                    🔒 Meta Business API Entegrasyonu &middot; KVKK Uyumlu Otonom Altyapı
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- HTML Kodu Aç/Kapat -->
+      <button class="code-toggle" onclick="toggleCode()">
+        <i class="fa-solid fa-chevron-right" id="codeChevron"></i> Kaynak HTML Kodunu Göster
+      </button>
+      <div class="code-box" id="codeBox"></div>
+    </div>
+
+    <!-- Adım Adım Kurulum Rehberi -->
+    <div class="guide-card">
+      <div class="guide-title">
+        <i class="fa-solid fa-list-check" style="color: #10b981;"></i> Mac İçin Outlook'a Ekleme (3 Adım)
+      </div>
+      <ol class="steps-list">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            Yukarıdaki mor <strong style="color: #a5b4fc;">"İmzayı Kopyala (Outlook İçin)"</strong> butonuna tıklayın (imza otomatik olarak tüm stil ve renkleriyle panoya kopyalanır).
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <strong>Microsoft Outlook</strong> uygulamasını açın. Üst menüden <strong>Outlook → Ayarlar (veya Tercihler) → İmzalar</strong> bölümüne gidin.
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            Sol alttaki <span class="step-key">+</span> (Yeni İmza) butonuna basın. İmza adı olarak <strong>Volreon AI</strong> yazın. Sağdaki metin kutusuna tıklayıp <span class="step-key">Cmd + V</span> (Yapıştır) yapın ve <strong>Kaydet</strong> butonuna basın.
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Web Outlook ve Windows Kılavuzu -->
+    <div class="guide-card" style="margin-bottom: 0;">
+      <div class="guide-title">
+        <i class="fa-solid fa-globe" style="color: #38bdf8;"></i> Web Outlook (outlook.office.com / live.com)
+      </div>
+      <ol class="steps-list">
+        <li class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            Tarayıcınızda Outlook Web'i açın. Sağ üstteki <strong>Ayarlar (Çark ⚙️ simgesi)</strong> → <strong>Posta</strong> → <strong>Oluştur ve Yanıtla</strong> sekmesine gelin.
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <strong>"Yeni İmza"</strong> butonuna basın, imza kutusuna tıklayıp <span class="step-key">Cmd + V</span> (veya Windows'ta <span class="step-key">Ctrl + V</span>) ile yapıştırın ve <strong>Kaydet</strong> deyin.
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+
+  <script>
+    // HTML kodunu kutuya doldur
+    const sigHtml = document.getElementById('signatureContainer').innerHTML.trim();
+    document.getElementById('codeBox').textContent = sigHtml;
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      const tm = document.getElementById('toastMsg');
+      tm.textContent = msg;
+      t.style.display = 'flex';
+      setTimeout(() => {
+        t.style.display = 'none';
+      }, 5000);
+    }
+
+    // Zengin Metin (Rich HTML) Kopyalama
+    async function copySignatureRichText() {
+      const container = document.getElementById('signatureContainer');
+      const htmlData = container.innerHTML;
+      const plainText = container.innerText;
+
+      try {
+        if (navigator.clipboard && window.ClipboardItem) {
+          const typeHtml = 'text/html';
+          const typePlain = 'text/plain';
+          const blobHtml = new Blob([htmlData], { type: typeHtml });
+          const blobPlain = new Blob([plainText], { type: typePlain });
+          const item = new ClipboardItem({
+            [typeHtml]: blobHtml,
+            [typePlain]: blobPlain
+          });
+          await navigator.clipboard.write([item]);
+        } else {
+          selectSignature();
+          document.execCommand('copy');
+        }
+        showToast('✅ İmza başarıyla panoya kopyalandı! Şimdi Outlook\'a geçip Cmd+V ile yapıştırabilirsiniz.');
+      } catch (err) {
+        // Fallback
+        selectSignature();
+        try {
+          document.execCommand('copy');
+          showToast('✅ İmza seçildi ve panoya kopyalandı! Outlook\'a Cmd+V ile yapıştırabilirsiniz.');
+        } catch (e) {
+          showToast('Lütfen imza alanını seçip klavyeden Cmd+C tuşlarına basınız.');
+        }
+      }
+    }
+
+    // Alanı Seç
+    function selectSignature() {
+      const container = document.getElementById('signatureContainer');
+      const range = document.createRange();
+      range.selectNodeContents(container);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      showToast('İmza alanı seçildi. Şimdi Cmd+C ile kopyalayabilirsiniz.');
+    }
+
+    // Ham HTML Kodunu Kopyala
+    function copyHtmlSource() {
+      navigator.clipboard.writeText(sigHtml).then(() => {
+        showToast('✅ Ham HTML kaynak kodu panoya kopyalandı!');
+      }).catch(() => {
+        showToast('Kopyalama başarısız oldu.');
+      });
+    }
+
+    // Kod Kutusunu Aç/Kapat
+    function toggleCode() {
+      const box = document.getElementById('codeBox');
+      const chev = document.getElementById('codeChevron');
+      if (box.style.display === 'block') {
+        box.style.display = 'none';
+        chev.className = 'fa-solid fa-chevron-right';
+      } else {
+        box.style.display = 'block';
+        chev.className = 'fa-solid fa-chevron-down';
+      }
+    }
+  </script>
+</body>
+</html>
