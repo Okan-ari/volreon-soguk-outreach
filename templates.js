@@ -274,7 +274,7 @@ function getEmailContent(lead) {
               </tr>
               <tr>
                 <td style="padding: 0 0 7px 0; font-size: 12.5px; line-height: 1.3; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; white-space: nowrap;">
-                  <strong style="color: #0f172a; font-weight: 800;">VOLREON</strong>&nbsp;<span style="background-color: #e0e7ff; color: #312e81; font-size: 8.5px; font-weight: 900; padding: 1px 4px; border: 1px solid #818cf8; border-radius: 3px;">AI</span>&nbsp;<span style="color: #475569; font-weight: 600;">&middot; Kurumsal İletişim</span>
+                  <span style="vertical-align: middle; color: #0f172a; font-weight: 800; font-size: 12.5px;">VOLREON</span>&nbsp;<span style="vertical-align: middle; background-color: #e0e7ff; color: #312e81; font-size: 8px; font-weight: 900; padding: 1px 3.5px; border: 1px solid #818cf8; border-radius: 3px; line-height: 1;">AI</span>&nbsp;<span style="vertical-align: middle; color: #475569; font-weight: 600; font-size: 12.5px;">&middot; Kurumsal İletişim</span>
                 </td>
               </tr>
               <tr>
